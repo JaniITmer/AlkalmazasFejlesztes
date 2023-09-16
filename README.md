@@ -1,0 +1,2 @@
+# AlkalmazasFejlesztes
+Közös Projektmunka
