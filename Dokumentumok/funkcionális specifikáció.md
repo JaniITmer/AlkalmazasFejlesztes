@@ -2,6 +2,7 @@
 ## 1. Jelenlegi helyzet leírása
 
 ## 2. Vágyálomrendszer leírása
+#### A program betöltésekor a felhasználót egy főmenü fogadja, ahol 3 funkció közül választhat: Szimuláció Véletlen Számokkal, Szimuláció Saját Számokkal, Kilépés. A véletlen számokkal való játék esetén egy olyan felület jelenik meg, ahol a felső sorban a nyerő számok szerepelnek, az alatta lévő sorban pedig a játékosnak generált számok. Amennyiben a saját számokkal való szimulációt válasszuk, megadhatjuk a számokat, amikkel játszani szeretnénk, majd elindítjuk a szimulációt. A sorsolás után megkapjuk a nyerő számokat, a találatok számát, illetve a nyeremény összegét.
 
 ## 3. Jelenlegi üzleti folyamatok modellje
 
