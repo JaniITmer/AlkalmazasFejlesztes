@@ -3,6 +3,7 @@
 
 ## 2. A jelenlegi helyzet leírása
 
+
 ## 3. Vágyálomrendszer
 #### Szeretnénk egy olyan szoftvert létrehozni, ami az ötös lottó számhúzását szimulálja, mindezt könnyen kezelhető és felhasználó barát módon. A megalkotására legalkalmasabb felületnek a Windows Form-ot gondoljuk, mivel a lottó vizuális felülete könnyedén reprezentálható. Mindezzel az a célunk, hogy szórakoztató formában tudjanak az emberek lottót játszani anélkül, hogy bármennyi pénzt is költenének. Ezzel felhívnánk a szerencsejáték függőség veszélyeire a figyelmet. A projektet mindenféleképpen a határidő leteltéig szeretnénk befejezni. A követelmények közé tarozik még, hogy hiba nélkül működjön és mindenki kivegye a részét minden feladatból.
 
@@ -16,6 +17,11 @@
 
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
-| K1 | ... | ... | ... |
+| K1 | Főmenü | Design, Gombok elhelyezése | Könnyen kezelhető, figyelemfelkeltő főmenü |
+| K2 | Főmenü | Választófelület | Szimuláció típus kiválasztása |
+| K3 | Szimuláció | Design | Szimuláció design kialakítása |
+| K4 | Szimuláció | Szimuláció véletlenszerű számokkal | Ötös lottó számhúzó szimulációja véletlenszerű számokkal |
+| K5 | Szimuláció | Szimuláció saját számokkal | Ötös lottó számhúzó szimulációja saját számokkal |
+| K6 | Szimuláció | Találatok száma kiírás | Eltalált számok alapján találatok kiírása |
+| K7 | Szimuláció | Nyeremény kiírás | Eltalált számok alapján nyeremény kiírása |
 
-## 7. Fogalomtár
