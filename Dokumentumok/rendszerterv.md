@@ -4,14 +4,14 @@
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
-   * Scrum masters:
-   * Product owner: 
-   * Üzleti szereplő:
+   * Scrum masters:  Katona Bálint
+   * Product owner:  Guba Ádám
+   * Üzleti szereplő: Buru Ádám
      
 ### 2.2 Projektmunkások és felelőségek:
-   * Frontend:
-   * Backend:
-   * Tesztelés:
+   * Frontend: Guba Ádám
+   * Backend:  Juhász Gergő
+   * Tesztelés: Nagy János
      
 ### 2.3 Ütemterv:
 
