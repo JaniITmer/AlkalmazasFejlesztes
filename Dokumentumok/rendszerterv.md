@@ -1,6 +1,9 @@
 # Rendszerterv
 ## 1. A rendszer célja
 
+
+A rendszer célja, hogy szórakoztassa a felhasználókat korosztálytól függetlenül. Lehet választani véletlenszerű és saját számokkal való szimulációk közül. Tervünk szerint ezzel csökkenthetjük a függőség kialakulásának a valószínűségét. Ahelyett hogy az emberek egy nyerés-vesztés körfogásba kerülnének és csak ki akarnák próbálni a szerencséjüket, egyszerűen csak elindítják a szoftvert és játszanak vele. Így úgy tesztelhetik a szerencséjüket, hogy bármilyen pénzt is költeniük kéne, így a káros körforgás teljesen kimarad.
+
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
