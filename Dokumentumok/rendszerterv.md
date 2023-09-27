@@ -6,16 +6,23 @@ A rendszer célja, hogy szórakoztassa a felhasználókat korosztálytól függe
 
 ## 2. Projektterv
 
-### 2.1 Projektszerepkörök, felelőségek:
-   * Scrum masters:  Katona Bálint
-   * Product owner:  Guba Ádám
-   * Üzleti szereplő: Buru Ádám
-     
-### 2.2 Projektmunkások és felelőségek:
-   * Frontend: Guba Ádám
-   * Backend:  Juhász Gergő
-   * Tesztelés: Nagy János
-     
+A rendszer létrehozásához rendelkezésre álló erőforrások:
+A felhasználó által használt notebookok/asztali számítógépek melyeknek rendelkezniük kell egy futó opercációs rendszerrel(Windows 10/11, Linux)
+
+   - Scrum Masters: Katona Bálint Sándor
+   - Product Owner: Katona Bálint Sándor, Buru Ádám, Guba Ádám, Juhász Gergő, Nagy János
+   - Contributer: Buru Ádám
+   - Contributer: Guba Ádám
+   - Contributer: Juhász Gergő
+   - Contributer: Nagy János
+   - Megrendelő: Bagoly Gábor
+
+## 3. Résztvevők és főbb szereplők:
+- Buru Ádám: A program fejlesztése, tesztelése.
+- Guba Ádám: A program fejlesztése, tesztelése.
+- Juhész Gergő: A program fejlesztése, tesztelése.
+- Nagy János: A program fejlesztése, tesztelése
+- Katona Bálint Sándor: A fejlesztés felülvizsgálása.
 ### 2.3 Ütemterv:
 
 |Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
