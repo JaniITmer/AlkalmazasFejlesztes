@@ -12,6 +12,7 @@
 #### A program amellett, hogy a felhasználó virtuálisan kipróbálhatja magát a szerencsejátékban, más haszna is van. A szerencsejáték függőség napjainkban egy komoly probléma. Ez az alkalmazás az olyan emberek számára is hasznos lehet, akik ilyen függőséggel szenvednek. Anélkül, hogy kiürítenék a családi kasszát, bűntudat nélkül játszhatnak, mert csak a virtuális pénzüket kockáztatják.
 
 ## 5. Igényelt üzleti folyamatok modellje
+#### Az alkalmazásban a felhasználónak lehetősége lesz véletlen számokat generálni és azokkal játszani, illetve saját maga is megadhatja a számokat. Ezután elindíthatja a nyerő számok kisorsolásának leszimulálását. Amint a szimuláció végbement, visszajelzést kapunk a nyerő számokról, az általunk eltalált számokról, illetve a nyereményről.
 
 ## 6. Követelménylista
 

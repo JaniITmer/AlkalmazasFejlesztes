@@ -49,6 +49,7 @@
 | K4 | ... | ... |
 
 ### Támogatott eszközök
+Windows Pc
 
 ## 5. Funkcionális terv
 
