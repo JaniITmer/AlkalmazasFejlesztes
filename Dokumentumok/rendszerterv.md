@@ -23,109 +23,39 @@ A felhasználó által használt notebookok/asztali számítógépek melyeknek r
 - Juhész Gergő: A program fejlesztése, tesztelése.
 - Nagy János: A program fejlesztése, tesztelése
 - Katona Bálint Sándor: A fejlesztés felülvizsgálása.
-### 2.3 Ütemterv:
+## 4. Mérföldkövek:
+ - Feladatok kiosztása megegyezés és tudás szerint.
+ - Dokumentációk, leírások képernyő tervek véglegesítése.
+ - Git repo folyamatos frissítése amikor akármi elkészül.
+ - Folyamatos kommunikáció a projektben résztvevőkkel.
+ - Tesztelési folyamatok befejezése.
+ - Felkészülés a projekt bemutatására.
+ - Bemutatás.
 
-|Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
-|-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
-|Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |             
-|Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
-|Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
-|Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                1 |                   1 |
-|Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                8 |                   8 |
-|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
-|Program                  |Tesztelés                               |         4 |             2 |                      2 |                2 |                   2 |
+ ## 5. Funkcionális terv
+Futtatás után egy kezelőfelület jelenik meg, ahol 3 menüpont fogad. Egy szimuláció véletlen számokkal, egy szimuláció saját számokkal és egy kilépés gomb. Mind a véletlen, mind a saját számos szimulációnál egy új ablak jelenik meg, ahol a felső sorban a "kihúzott" számok vannak, és az alsó sorban pedig a játékos számai. Saját számos generálásnál a játékosnak kell beírni az általa választott számokat és csak utánna tudja szimulálni a húzásokat. Minden húzás után a találatok száma alapján kiír egy nyeremény összeget.
 
-### 2.4 Mérföldkövek:
-   * Prototípus átadása
+## 6. Fizikai terv
+### Futtatás módja:
+- Minden számítógépen lokálisan fut majd
+### Futtató környezet:
+- .NET Framework
+### Elérhető operációs rendszerek:
+- Windows 8.1
+- Windows 10
+- Windows 11
+### Szoftver moduljai:
+- A szoftvert két Windows Form Application tesz össze
+### Fejlesztői környezet:
+- Visual Studio C#
 
-## 3. Üzleti folyamatok modellje
+## 7. Teszt terv
+A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata, ellenőrzése, a rendszer által megvalósított üzleti szolgáltatások verifikálása. Mi főleg a fejlesztői tesztekre fogunk fókuszálni.
+#### Tesztelendő funkciók
+ - Működnie kell a gomboknak a főmenüben
+ - Sikeresen le kell generálni 5 véletlen számot
+ - Saját számos szimulációnál nem lehetnek üresek a mezők
+ - Találatok számát jól meg kell számolni
 
-### 3.1 Üzleti szereplők
-
-### 3.2 Üzleti folyamatok
-
-## 4. Követelmények
-
-### Funkcionális követelmények
-
-| ID | Megnevezés | Leírás |
-| --- | --- | --- |
-| K1 | ... | ... |
-
-### Nemfunkcionális követelmények
-
-| ID | Megnevezés | Leírás |
-| --- | --- | --- |
-| K4 | ... | ... |
-
-### Támogatott eszközök
-Windows Pc
-
-## 5. Funkcionális terv
-
-### 5.1 Rendszerszereplők
-
-### 5.2 Menühierarchiák
-
-## 6. Fizikai környezet
-
-### Vásárolt softwarekomponensek és külső rendszerek
-
-### Hardver topológia
-
-### Fizikai alrendszerek
-
-### Fejlesztő eszközök
-
-
-## 8. Architekturális terv
-
-### Webszerver
-
-### Adatbázis rendszer
-
-### A program elérése, kezelése
-
-## 9. Adatbázis terv
-
-## 10. Implementációs terv
-
-## 11. Tesztterv
-
-A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata,
-ellenőrzése a rendszer által megvalósított üzleti szolgáltatások verifikálása.
-A teszteléseket a fejlesztői csapat minden tagja elvégzi.
-Egy teszt eredményeit a tagok dokumentálják külön fájlokba.
-
-### Tesztesetek
-
- | Teszteset | Elvárt eredmény | 
- |-----------|-----------------| 
- | ... | ... |
-
-### A tesztelési jegyzőkönyv kitöltésére egy sablon:
-
-**Tesztelő:** Vezetéknév Keresztnév
-
-**Tesztelés dátuma:** Év.Hónap.Nap
-
-Tesztszám | Rövid leírás | Várt eredmény | Eredmény | Megjegyzés
-----------|--------------|---------------|----------|-----------
-például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával sikeresen regisztrálni tud  | A felhasználó sikeresen regisztrált | Nem találtam problémát.
-... | ... | ... | ... | ...
-
-## 12. Telepítési terv
-
-Fizikai telepítési terv: 
-
-Szoftver telepítési terv: 
-
-## 13. Karbantartási terv
-
-Fontos ellenőrizni:
-...
-
-Figyelembe kell venni a felhasználó által jött visszajelzést is a programmal kapcsolatban.
-Ha hibát talált, mielőbb orvosolni kell, lehet az:
-*	Működéssel kapcsolatos
-*	Kinézet, dizájnnal kapcsolatos
+## 8. Telepités
+A programot Githubon keresztül lehet telepíteni miután elvégeztük a letöltést [A letöltéshez segítség](https://crast.net/150687/downloading-files-from-github-is-very-simple-this-is-how-you-can-do-it-from-your-mobile-or-pc "Segítség a letöltéshez") utánna ki bontjuk a mappát oda ahová szeretnénk.
