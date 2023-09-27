@@ -4,6 +4,8 @@
 ## 2. A jelenlegi helyzet leírása
 
 ## 3. Vágyálomrendszer
+#### Szeretnénk egy olyan szoftvert létrehozni, ami az ötös lottó számhúzását szimulálja, mindezt könnyen kezelhető és felhasználó barát módon. A megalkotására legalkalmasabb felületnek a Windows Form-ot gondoljuk, mivel a lottó vizuális felülete könnyedén reprezentálható. Mindezzel az a célunk, hogy szórakoztató formában tudjanak az emberek lottót játszani anélkül, hogy bármennyi pénzt is költenének. Ezzel felhívnánk a szerencsejáték függőség veszélyeire a figyelmet. A projektet mindenféleképpen a határidő leteltéig szeretnénk befejezni. A követelmények közé tarozik még, hogy hiba nélkül működjön és mindenki kivegye a részét minden feladatból.
+
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
