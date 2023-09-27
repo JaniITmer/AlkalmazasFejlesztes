@@ -8,6 +8,7 @@
 #### Napjainkban egyre csak nő a szerencsejáték függők száma. Ez részben annak is köszönhető, hogy nagyon sok mobilra fejlesztett játék jutalmazó rendszere gyorsan megszerezhető, kisebb nyereményekkel halmozza el a felhasználót. Egy idő után viszont már ez nem lesz elég, mindig egyre csak többet és többet akar az ember, majd a saját pénzét is erre költi. A mi alkalmazásunk célja, hogy a felhasználó ugyanúgy jutalmazva legyen, de anélkül, hogy adósságokba sodorná magát.
 
 ## 4. Igényelt üzleti folyamatok modellje
+#### A függőség megelőzésére, illetve megkönnyítésére egy olyan szoftvert tervezünk megvalósítani, ami ingyenesen adja át a szerencsejátékozás élményét, ezenkívül figyelemfelhívó szerepe is van ennek a szenvedélynek a veszélyeire. A program nem igényel internet kapcsolatot, az elkészítésnél igyekszünk az egyszerű és figyelemfelkeltő kezelőfelület megvalósítására, hogy minél több felhasználó számára legyen elérhető.
 
 ## 5. Követelménylista
 
