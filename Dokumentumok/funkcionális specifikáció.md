@@ -15,7 +15,13 @@
 
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
-| K1 | ...| ... | ... |
+| K1 | Főmenü | Design, Gombok elhelyezése | Könnyen kezelhető, figyelemfelkeltő főmenü |
+| K2 | Főmenü | Választófelület | Szimuláció típus kiválasztása |
+| K3 | Szimuláció | Design | Szimuláció design kialakítása |
+| K4 | Szimuláció | Szimuláció véletlenszerű számokkal | Ötös lottó számhúzó szimulációja véletlenszerű számokkal |
+| K5 | Szimuláció | Szimuláció saját számokkal | Ötös lottó számhúzó szimulációja saját számokkal |
+| K6 | Szimuláció | Találatok száma kiírás | Eltalált számok alapján találatok kiírása |
+| K7 | Szimuláció | Nyeremény kiírás | Eltalált számok alapján nyeremény kiírása |
 
 ## 6. Használati esetek
 
