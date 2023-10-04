@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace AlkalmazasFejlesztes_projekt
 {
-    public partial class Veletlenszamos : Form
+    public partial class lotteryTable : Form
     {
-        public Veletlenszamos()
+        public lotteryTable()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
