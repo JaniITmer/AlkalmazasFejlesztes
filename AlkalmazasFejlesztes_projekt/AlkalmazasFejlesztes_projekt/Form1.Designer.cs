@@ -1,6 +1,6 @@
 ﻿namespace AlkalmazasFejlesztes_projekt
 {
-    partial class Form1
+    partial class MainOldal
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(194, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(414, 39);
+            this.label1.Size = new System.Drawing.Size(400, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Szerencsejáték szimulátor";
             // 
@@ -52,6 +52,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Játék véletlenszerű számokkal";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -61,6 +62,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Játék saját számokkkal";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -70,8 +72,9 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Kilépés";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Form1
+            // MainOldal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,7 +83,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "MainOldal";
             this.Text = "Szerencsejatek_szimulator";
             this.ResumeLayout(false);
             this.PerformLayout();

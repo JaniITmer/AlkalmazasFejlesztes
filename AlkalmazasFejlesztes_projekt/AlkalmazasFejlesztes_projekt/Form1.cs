@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace AlkalmazasFejlesztes_projekt
 {
-    public partial class Form1 : Form
+    public partial class MainOldal : Form
     {
-        public Form1()
+        public MainOldal()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e) //Main page véletlenszerű gomb
+        {
+            VeletlenSzamosOldal veletlenSzamos = new VeletlenSzamosOldal();
+            veletlenSzamos.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e) //Main page sajatszámos gomb
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e) //Main page kilépő gomb
+        {
+
         }
     }
 }

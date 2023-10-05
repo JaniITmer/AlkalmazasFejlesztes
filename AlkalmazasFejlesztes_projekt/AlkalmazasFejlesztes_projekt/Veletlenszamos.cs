@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlkalmazasFejlesztes_projekt;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +11,21 @@ using System.Windows.Forms;
 
 namespace AlkalmazasFejlesztes_projekt
 {
-    public partial class lotteryTable : Form
+    public partial class VeletlenSzamosOldal : Form
     {
-        public lotteryTable()
+        public VeletlenSzamosOldal()
         {
             InitializeComponent();
+            fillNumbers();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
+        
     }
 }
+
+
+

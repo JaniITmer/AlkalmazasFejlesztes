@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AlkalmazasFejlesztes_projekt
 {
-    public partial class Form2 : Form
+    public partial class SajatSzamosOldal : Form
     {
-        public Form2()
+        public SajatSzamosOldal()
         {
             InitializeComponent();
         }

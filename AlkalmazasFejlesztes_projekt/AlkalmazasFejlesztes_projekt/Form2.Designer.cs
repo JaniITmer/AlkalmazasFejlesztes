@@ -1,6 +1,6 @@
 ﻿namespace AlkalmazasFejlesztes_projekt
 {
-    partial class Form2
+    partial class SajatSzamosOldal
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Form2
+            // SajatSzamosOldal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form2";
+            this.Name = "SajatSzamosOldal";
             this.Text = "Sajatszamos";
             this.ResumeLayout(false);
 
