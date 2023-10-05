@@ -23,7 +23,24 @@ namespace AlkalmazasFejlesztes_projekt
         {
 
         }
-        
+        private void fillNumbers()
+        {
+            int counter = 1;
+
+            for (int row = 0; row < 9; row++)
+            {
+                for (int column = 0; column < 10; column++)
+                {
+                    Label label = new Label();
+                    label.Text = counter.ToString();
+                    label.Dock = DockStyle.Fill;
+                    label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                    lottoryTable.Controls.Add(label, column, row);
+                    counter++;
+                }
+            }
+        }
+
     }
 }
 
