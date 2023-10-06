@@ -13,15 +13,11 @@ namespace AlkalmazasFejlesztes_projekt
 {
     public partial class VeletlenSzamosOldal : Form
     {
+        Random rnd=new Random();
         public VeletlenSzamosOldal()
         {
             InitializeComponent();
             fillNumbers();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
         private void fillNumbers()
         {
@@ -48,6 +44,15 @@ namespace AlkalmazasFejlesztes_projekt
             this.Hide();
             
             mainOldal.FormClosed += (s, args) => this.Close();
+        }
+        private int[] veletlenszamok;
+        private void Veletlengeneralas(object sender, EventArgs e)
+          
+        {
+            for(int i=0; i < 5; i++)
+            {
+               veletlenszamok.Append(rnd.Next(1, 90));
+            }
         }
     }
 }

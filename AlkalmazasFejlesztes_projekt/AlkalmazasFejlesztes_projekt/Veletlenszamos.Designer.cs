@@ -44,7 +44,7 @@
             this.randomSzamok.TabIndex = 1;
             this.randomSzamok.Text = "Random számok";
             this.randomSzamok.UseVisualStyleBackColor = false;
-            this.randomSzamok.Click += new System.EventHandler(this.button1_Click);
+            this.randomSzamok.Click += new System.EventHandler(this.Veletlengeneralas);
             // 
             // button1
             // 
