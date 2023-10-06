@@ -15,8 +15,26 @@ namespace AlkalmazasFejlesztes_projekt
         public SajatSzamosOldal()
         {
             InitializeComponent();
+            fillNumbers();
         }
 
+        private void fillNumbers()
+        {
+            int counter = 1;
+
+            for (int row = 0; row < 9; row++)
+            {
+                for (int column = 0; column < 10; column++)
+                {
+                    Label label = new Label();
+                    label.Text = counter.ToString();
+                    label.Dock = DockStyle.Fill;
+                    label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                    lottoryTable.Controls.Add(label, column, row);
+                    counter++;
+                }
+            }
+        }
         private void lottoryTable_Paint(object sender, PaintEventArgs e)
         {
 
