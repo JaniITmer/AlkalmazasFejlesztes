@@ -34,3 +34,4 @@ C:\Users\User\Source\Repos\AlkalmazasFejlesztes_001\AlkalmazasFejlesztes_projekt
 C:\Users\User\Source\Repos\AlkalmazasFejlesztes_001\AlkalmazasFejlesztes_projekt\AlkalmazasFejlesztes_projekt\obj\Debug\AlkalmazasFejlesztes_projekt.csproj.CoreCompileInputs.cache
 C:\Users\User\Source\Repos\AlkalmazasFejlesztes_001\AlkalmazasFejlesztes_projekt\AlkalmazasFejlesztes_projekt\obj\Debug\AlkalmazasFejlesztes_projekt.exe
 C:\Users\User\Source\Repos\AlkalmazasFejlesztes_001\AlkalmazasFejlesztes_projekt\AlkalmazasFejlesztes_projekt\obj\Debug\AlkalmazasFejlesztes_projekt.pdb
+C:\Users\User\Source\Repos\AlkalmazasFejlesztes\AlkalmazasFejlesztes_projekt\AlkalmazasFejlesztes_projekt\obj\Debug\AlkalmazasFejlesztes_projekt.csproj.SuggestedBindingRedirects.cache

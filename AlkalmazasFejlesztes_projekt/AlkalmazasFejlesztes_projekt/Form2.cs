@@ -16,5 +16,10 @@ namespace AlkalmazasFejlesztes_projekt
         {
             InitializeComponent();
         }
+
+        private void lottoryTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

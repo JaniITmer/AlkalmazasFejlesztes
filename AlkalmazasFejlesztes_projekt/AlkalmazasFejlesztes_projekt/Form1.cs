@@ -19,6 +19,7 @@ namespace AlkalmazasFejlesztes_projekt
 
         private void button1_Click(object sender, EventArgs e) //Main page véletlenszerű gomb
         {
+
             VeletlenSzamosOldal veletlenSzamos = new VeletlenSzamosOldal();
             veletlenSzamos.Show();
         }
