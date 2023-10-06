@@ -35,7 +35,7 @@ namespace AlkalmazasFejlesztes_projekt
 
         private void button3_Click(object sender, EventArgs e) //Main page kilépő gomb
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
