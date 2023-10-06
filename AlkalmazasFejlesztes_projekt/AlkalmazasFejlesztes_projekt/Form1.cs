@@ -35,7 +35,10 @@ namespace AlkalmazasFejlesztes_projekt
 
         private void button3_Click(object sender, EventArgs e) //Main page kilépő gomb
         {
-            Application.Exit();
+            Kilepo kilepo = new Kilepo();
+            kilepo.Show();
+            Visible = false;
+            
         }
     }
 }
