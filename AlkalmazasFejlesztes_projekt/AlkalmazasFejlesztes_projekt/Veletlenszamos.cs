@@ -18,6 +18,7 @@ namespace AlkalmazasFejlesztes_projekt
         {
             InitializeComponent();
             fillNumbers();
+            
         }
         private void fillNumbers()
         {
@@ -45,7 +46,7 @@ namespace AlkalmazasFejlesztes_projekt
             
             mainOldal.FormClosed += (s, args) => this.Close();
         }
-        private int[] veletlenszamok;
+        private int[] veletlenszamok = new int[5];
         private void Veletlengeneralas(object sender, EventArgs e)
           
         {
