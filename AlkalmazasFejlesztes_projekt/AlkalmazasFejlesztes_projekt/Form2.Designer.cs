@@ -44,6 +44,7 @@
             this.randomSzamok.TabIndex = 4;
             this.randomSzamok.Text = "Random számok";
             this.randomSzamok.UseVisualStyleBackColor = false;
+            this.randomSzamok.Click += new System.EventHandler(this.randomSzamok_Click);
             // 
             // button1
             // 
@@ -55,6 +56,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Vissza";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lottoryTable
             // 
@@ -96,7 +98,7 @@
             this.Controls.Add(this.lottoryTable);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.randomSzamok);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SajatSzamosOldal";
             this.Text = "Sajatszamos";
             this.ResumeLayout(false);

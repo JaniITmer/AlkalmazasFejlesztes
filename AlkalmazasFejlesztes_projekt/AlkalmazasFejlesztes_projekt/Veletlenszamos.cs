@@ -41,6 +41,11 @@ namespace AlkalmazasFejlesztes_projekt
             }
         }
 
+        private void button1_Click_1(object sender, EventArgs e) // vissza gomb
+        {
+            MainOldal mainOldal = new MainOldal();
+            mainOldal.Show();
+        }
     }
 }
 
