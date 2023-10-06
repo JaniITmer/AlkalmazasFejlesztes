@@ -47,9 +47,11 @@ namespace AlkalmazasFejlesztes_projekt
 
         private void button1_Click(object sender, EventArgs e) //vissza gomb
         {
-            MainOldal mainOldal = new MainOldal();
-            mainOldal.Show();
-            Visible = false;
+            MainOldal mainoldal = new MainOldal();
+            mainoldal.Show();
+            this.Hide();
+            
+            mainoldal.FormClosed += (s, args) => this.Close();
         }
     }
 }

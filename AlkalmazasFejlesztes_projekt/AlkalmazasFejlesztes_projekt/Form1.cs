@@ -22,23 +22,31 @@ namespace AlkalmazasFejlesztes_projekt
             
             VeletlenSzamosOldal veletlenSzamos = new VeletlenSzamosOldal();
             veletlenSzamos.Show();
-            Visible = false;
+            this.Hide();
+
             
+            veletlenSzamos.FormClosed += (s, args) => this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e) //Main page sajatszámos gomb
         {
+            
             SajatSzamosOldal sajatSzamos = new SajatSzamosOldal();
             sajatSzamos.Show();
-            Visible = false;
+            this.Hide();
+            
+            sajatSzamos.FormClosed += (s, args) => this.Close();
+
         }
 
         private void button3_Click(object sender, EventArgs e) //Main page kilépő gomb
         {
+            
             Kilepo kilepo = new Kilepo();
             kilepo.Show();
-            Visible = false;
+            this.Hide();
             
+            kilepo.FormClosed += (s, args) => this.Close();
         }
     }
 }

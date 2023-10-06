@@ -21,7 +21,9 @@ namespace AlkalmazasFejlesztes_projekt
         {
             MainOldal mainoldal = new MainOldal();
             mainoldal.Show();
-            Visible = false;
+            this.Hide();
+            
+            mainoldal.FormClosed += (s, args) => this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
