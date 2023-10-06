@@ -47,9 +47,9 @@ namespace AlkalmazasFejlesztes_projekt
 
         private void button1_Click(object sender, EventArgs e) //vissza gomb
         {
-            this.Close();
             MainOldal mainOldal = new MainOldal();
             mainOldal.Show();
+            Visible = false;
         }
     }
 }

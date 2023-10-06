@@ -45,6 +45,7 @@ namespace AlkalmazasFejlesztes_projekt
         {
             MainOldal mainOldal = new MainOldal();
             mainOldal.Show();
+            Visible = false;
         }
     }
 }
