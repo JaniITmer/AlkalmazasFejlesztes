@@ -53,7 +53,21 @@ namespace AlkalmazasFejlesztes_projekt
             for(int i=0; i < 5; i++)
             {
                veletlenszamok.Append(rnd.Next(1, 90));
+
             }
+
+
+        }
+
+
+
+
+
+
+
+        private void lottoryTable_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

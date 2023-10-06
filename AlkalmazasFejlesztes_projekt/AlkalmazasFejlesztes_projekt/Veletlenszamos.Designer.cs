@@ -38,7 +38,7 @@
             // 
             this.randomSzamok.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.randomSzamok.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.randomSzamok.Location = new System.Drawing.Point(141, 12);
+            this.randomSzamok.Location = new System.Drawing.Point(94, 76);
             this.randomSzamok.Name = "randomSzamok";
             this.randomSzamok.Size = new System.Drawing.Size(153, 76);
             this.randomSzamok.TabIndex = 1;
@@ -88,6 +88,7 @@
             this.lottoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.19405F));
             this.lottoryTable.Size = new System.Drawing.Size(359, 338);
             this.lottoryTable.TabIndex = 0;
+            this.lottoryTable.Paint += new System.Windows.Forms.PaintEventHandler(this.lottoryTable_Paint);
             // 
             // VeletlenSzamosOldal
             // 
