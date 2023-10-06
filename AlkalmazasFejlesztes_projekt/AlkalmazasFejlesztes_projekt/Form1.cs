@@ -26,7 +26,8 @@ namespace AlkalmazasFejlesztes_projekt
 
         private void button2_Click(object sender, EventArgs e) //Main page sajatszámos gomb
         {
-
+            SajatSzamosOldal sajatSzamos = new SajatSzamosOldal();
+            sajatSzamos.Show();
         }
 
         private void button3_Click(object sender, EventArgs e) //Main page kilépő gomb
