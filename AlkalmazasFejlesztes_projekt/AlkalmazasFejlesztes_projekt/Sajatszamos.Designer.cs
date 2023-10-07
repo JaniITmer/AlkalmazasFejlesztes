@@ -32,6 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.lottoryTable = new System.Windows.Forms.TableLayoutPanel();
             this.sorsolasButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -91,18 +92,31 @@
             this.sorsolasButton.UseVisualStyleBackColor = false;
             this.sorsolasButton.Click += new System.EventHandler(this.sorsolasButton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 29);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
+            // 
             // SajatSzamosOldal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1137, 689);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.sorsolasButton);
             this.Controls.Add(this.lottoryTable);
             this.Controls.Add(this.button1);
             this.Name = "SajatSzamosOldal";
             this.Text = "Sajatszamos";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -110,5 +124,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TableLayoutPanel lottoryTable;
         private System.Windows.Forms.Button sorsolasButton;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -15,6 +15,7 @@ namespace AlkalmazasFejlesztes_projekt
         private List<int> kivalasztottSzamok = new List<int>();
         private List<int> nyeroSzamok = new List<int>();
         private Random rnd = new Random();
+        private decimal egyenleg = 0;
         public SajatSzamosOldal()
         {
             InitializeComponent();
@@ -40,6 +41,7 @@ namespace AlkalmazasFejlesztes_projekt
                     counter++;
                 }
             }
+            label1.Text = $"Egyenleg: \n{egyenleg} Ft";
         }
 
         private void Label_Click(object sender, EventArgs e)
@@ -89,7 +91,7 @@ namespace AlkalmazasFejlesztes_projekt
         {
             while (nyeroSzamok.Count < 5)
             {
-                int szam = rnd.Next(1, 91);
+                int szam = rnd.Next(1, 6);
 
                 if (!nyeroSzamok.Contains(szam))
                 {
@@ -144,12 +146,17 @@ namespace AlkalmazasFejlesztes_projekt
                         break;
                 }
 
+                egyenleg += nyeremeny;
+
                 string nyeroSzamokString = string.Join(", ", nyeroSzamok);
                 string kivalasztottSzamokString = string.Join(", ", kivalasztottSzamok);
                 MessageBox.Show($"Találatok száma: {talalatok}\n" +
                     $"A nyerő számok: {nyeroSzamokString}\n" +
                     $"A választott számok: {kivalasztottSzamokString}\n" +
-                    $"Nyeremény: {nyeremeny} Ft");
+                    $"Nyeremény: {nyeremeny} Ft\n" +
+                    $"Egyenleg: {egyenleg}");
+
+                label1.Text = $"Egyenleg: \n{egyenleg} Ft";
             }
         }
 
