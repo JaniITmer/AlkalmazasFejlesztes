@@ -66,7 +66,7 @@ namespace AlkalmazasFejlesztes_projekt
         {
             while (nyeroSzamok.Count < 5)
             {
-                int szam = rnd.Next(1, 6);
+                int szam = rnd.Next(1, 91);
 
                 if (!nyeroSzamok.Contains(szam))
                 {
@@ -77,6 +77,12 @@ namespace AlkalmazasFejlesztes_projekt
 
         private void sorsolasButton_Click(object sender, EventArgs e)
         {
+            if (kivalasztottSzamok.Count() != 5)
+            {
+                MessageBox.Show($"Válasszon ki még {5 - kivalasztottSzamok.Count()} számot!");
+            }
+            else
+            {
                 int talalatok = 0;
 
                 foreach (int szam in kivalasztottSzamok)
@@ -86,7 +92,8 @@ namespace AlkalmazasFejlesztes_projekt
                         talalatok++;
                     }
                 }
-                MessageBox.Show($"Találatok száma: { talalatok}");
+                MessageBox.Show($"Találatok száma: {talalatok}");
+            }
         }
 
         private void lottoryTable_Paint(object sender, PaintEventArgs e)
