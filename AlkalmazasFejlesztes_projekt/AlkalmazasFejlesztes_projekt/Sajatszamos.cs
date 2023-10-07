@@ -113,6 +113,7 @@ namespace AlkalmazasFejlesztes_projekt
             else
             {
                 int talalatok = 0;
+                int nyeremeny = 0;
 
                 foreach (int szam in kivalasztottSzamok)
                 {
@@ -121,9 +122,34 @@ namespace AlkalmazasFejlesztes_projekt
                         talalatok++;
                     }
                 }
-                string nyerostring = string.Join(", ", nyeroSzamok);
-                MessageBox.Show($"{nyerostring}");
-                MessageBox.Show($"Találatok száma: {talalatok}");
+
+                switch (talalatok)
+                {
+                    case 1:
+                        nyeremeny += 0;
+                        break;
+                    case 2:
+                        nyeremeny += 2855;
+                        break;
+                    case 3:
+                        nyeremeny += 21895;
+                        break;
+                    case 4:
+                        nyeremeny += 1576810;
+                        break;
+                    case 5:
+                        nyeremeny += 1785282580;
+                        break;
+                    default:
+                        break;
+                }
+
+                string nyeroSzamokString = string.Join(", ", nyeroSzamok);
+                string kivalasztottSzamokString = string.Join(", ", kivalasztottSzamok);
+                MessageBox.Show($"Találatok száma: {talalatok}\n" +
+                    $"A nyerő számok: {nyeroSzamokString}\n" +
+                    $"A választott számok: {kivalasztottSzamokString}\n" +
+                    $"Nyeremény: {nyeremeny} Ft");
             }
         }
 
