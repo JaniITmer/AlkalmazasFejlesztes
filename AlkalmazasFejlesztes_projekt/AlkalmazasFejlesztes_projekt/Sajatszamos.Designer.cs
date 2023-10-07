@@ -34,17 +34,19 @@
             this.sorsolasButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.resetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.Location = new System.Drawing.Point(87, 557);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(224, 89);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Vissza";
+            this.button1.Text = "VISSZA";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -117,12 +119,25 @@
             this.richTextBox1.TabIndex = 9;
             this.richTextBox1.Text = "";
             // 
+            // resetButton
+            // 
+            this.resetButton.BackColor = System.Drawing.Color.Gold;
+            this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.resetButton.Location = new System.Drawing.Point(130, 431);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(140, 62);
+            this.resetButton.TabIndex = 10;
+            this.resetButton.Text = "ÚJ JÁTÉK";
+            this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
+            // 
             // SajatSzamosOldal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1137, 689);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sorsolasButton);
             this.Controls.Add(this.lottoryTable);
@@ -141,5 +156,6 @@
         private System.Windows.Forms.Button sorsolasButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button resetButton;
     }
 }

@@ -21,6 +21,7 @@ namespace AlkalmazasFejlesztes_projekt
             InitializeComponent();
             fillNumbers();
             richTextBox1.Hide();
+            resetButton.Hide();
         }
 
         private void fillNumbers()
@@ -149,10 +150,14 @@ namespace AlkalmazasFejlesztes_projekt
 
                 egyenleg += nyeremeny;
 
-                string nyeroSzamokString = string.Join(", ", nyeroSzamok);
-                string kivalasztottSzamokString = string.Join(", ", kivalasztottSzamok);
+                nyeroSzamok.Sort();
+                kivalasztottSzamok.Sort();
+
+                string nyeroSzamokString = string.Join("   ", nyeroSzamok);
+                string kivalasztottSzamokString = string.Join("   ", kivalasztottSzamok);
  
                 richTextBox1.Show();
+                resetButton.Show();
                 sorsolasButton.Hide();
 
                 richTextBox1.Text = $"Találatok száma: {talalatok}\n\n" +
@@ -162,6 +167,24 @@ namespace AlkalmazasFejlesztes_projekt
 
                 label1.Text = $"Egyenleg: \n{egyenleg.ToString("C0")}";
             }
+        }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            kivalasztottSzamok.Clear();
+
+            foreach (Control control in lottoryTable.Controls)
+            {
+                if (control is Label label)
+                {
+                    label.BackColor = Color.PeachPuff;
+                }
+            }
+
+            richTextBox1.Text = string.Empty;
+            richTextBox1.Hide();
+            resetButton.Hide();
+            sorsolasButton.Show();
         }
 
         private void lottoryTable_Paint(object sender, PaintEventArgs e)
