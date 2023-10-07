@@ -37,6 +37,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Location = new System.Drawing.Point(87, 557);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(224, 89);
@@ -60,7 +61,7 @@
             this.lottoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.lottoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.lottoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.lottoryTable.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.lottoryTable.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lottoryTable.Location = new System.Drawing.Point(416, 34);
             this.lottoryTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lottoryTable.Name = "lottoryTable";
@@ -79,12 +80,15 @@
             // 
             // sorsolasButton
             // 
-            this.sorsolasButton.Location = new System.Drawing.Point(171, 177);
+            this.sorsolasButton.BackColor = System.Drawing.Color.GreenYellow;
+            this.sorsolasButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sorsolasButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sorsolasButton.Location = new System.Drawing.Point(130, 157);
             this.sorsolasButton.Name = "sorsolasButton";
-            this.sorsolasButton.Size = new System.Drawing.Size(90, 54);
+            this.sorsolasButton.Size = new System.Drawing.Size(140, 97);
             this.sorsolasButton.TabIndex = 7;
-            this.sorsolasButton.Text = "button2";
-            this.sorsolasButton.UseVisualStyleBackColor = true;
+            this.sorsolasButton.Text = "SORSOLÁS INDÍTÁSA\r\n";
+            this.sorsolasButton.UseVisualStyleBackColor = false;
             this.sorsolasButton.Click += new System.EventHandler(this.sorsolasButton_Click);
             // 
             // SajatSzamosOldal

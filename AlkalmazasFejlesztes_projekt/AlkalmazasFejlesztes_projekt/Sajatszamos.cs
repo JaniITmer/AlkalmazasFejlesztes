@@ -35,6 +35,8 @@ namespace AlkalmazasFejlesztes_projekt
                     label.Dock = DockStyle.Fill;
                     label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                     label.Click += Label_Click;
+                    label.MouseEnter += Label_MouseEnter;
+                    label.MouseLeave += Label_MouseLeave;
                     lottoryTable.Controls.Add(label, column, row);
                     counter++;
                 }
@@ -53,11 +55,33 @@ namespace AlkalmazasFejlesztes_projekt
             }
             else if (!kivalasztottSzamok.Contains(szam) && kivalasztottSzamok.Count == 5)
             {
-                MessageBox.Show("Már kiválasztottál 5 számot!");
+                MessageBox.Show("Csak 5 számot választhat ki!");
             }
             else 
             {
                 kivalasztottSzamok.Remove(szam);
+                label.BackColor = Color.PeachPuff;
+            }
+        }
+
+        private void Label_MouseEnter(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            int szam = int.Parse(label.Text);
+
+            if (!kivalasztottSzamok.Contains(szam))
+            {
+                label.BackColor = Color.Yellow;
+            }
+        }
+
+        private void Label_MouseLeave(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            int szam = int.Parse(label.Text);
+
+            if (!kivalasztottSzamok.Contains(szam))
+            {
                 label.BackColor = Color.PeachPuff;
             }
         }
