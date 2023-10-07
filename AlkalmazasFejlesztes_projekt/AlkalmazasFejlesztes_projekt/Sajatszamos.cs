@@ -20,6 +20,7 @@ namespace AlkalmazasFejlesztes_projekt
         {
             InitializeComponent();
             fillNumbers();
+            richTextBox1.Hide();
         }
 
         private void fillNumbers()
@@ -91,7 +92,7 @@ namespace AlkalmazasFejlesztes_projekt
         {
             while (nyeroSzamok.Count < 5)
             {
-                int szam = rnd.Next(1, 6);
+                int szam = rnd.Next(1, 91);
 
                 if (!nyeroSzamok.Contains(szam))
                 {
@@ -150,13 +151,16 @@ namespace AlkalmazasFejlesztes_projekt
 
                 string nyeroSzamokString = string.Join(", ", nyeroSzamok);
                 string kivalasztottSzamokString = string.Join(", ", kivalasztottSzamok);
-                MessageBox.Show($"Találatok száma: {talalatok}\n" +
-                    $"A nyerő számok: {nyeroSzamokString}\n" +
-                    $"A választott számok: {kivalasztottSzamokString}\n" +
-                    $"Nyeremény: {nyeremeny} Ft\n" +
-                    $"Egyenleg: {egyenleg}");
+ 
+                richTextBox1.Show();
+                sorsolasButton.Hide();
 
-                label1.Text = $"Egyenleg: \n{egyenleg} Ft";
+                richTextBox1.Text = $"Találatok száma: {talalatok}\n\n" +
+                    $"A nyerő számok: \n{nyeroSzamokString}\n\n" +
+                    $"A megtett számok: \n{kivalasztottSzamokString}\n\n" +
+                    $"Az Ön nyereménye: \n{nyeremeny.ToString("C0")}";
+
+                label1.Text = $"Egyenleg: \n{egyenleg.ToString("C0")}";
             }
         }
 

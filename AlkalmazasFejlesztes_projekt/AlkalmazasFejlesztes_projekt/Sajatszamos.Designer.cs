@@ -33,6 +33,7 @@
             this.lottoryTable = new System.Windows.Forms.TableLayoutPanel();
             this.sorsolasButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -103,6 +104,19 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "label1";
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.DarkRed;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.White;
+            this.richTextBox1.Location = new System.Drawing.Point(18, 94);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(365, 423);
+            this.richTextBox1.TabIndex = 9;
+            this.richTextBox1.Text = "";
+            // 
             // SajatSzamosOldal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -113,6 +127,7 @@
             this.Controls.Add(this.sorsolasButton);
             this.Controls.Add(this.lottoryTable);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.richTextBox1);
             this.Name = "SajatSzamosOldal";
             this.Text = "Sajatszamos";
             this.ResumeLayout(false);
@@ -125,5 +140,6 @@
         private System.Windows.Forms.TableLayoutPanel lottoryTable;
         private System.Windows.Forms.Button sorsolasButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
