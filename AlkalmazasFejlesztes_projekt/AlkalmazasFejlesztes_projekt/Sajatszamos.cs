@@ -205,5 +205,10 @@ namespace AlkalmazasFejlesztes_projekt
             
             mainoldal.FormClosed += (s, args) => this.Close();
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -13,12 +13,18 @@ namespace AlkalmazasFejlesztes_projekt
 {
     public partial class VeletlenSzamosOldal : Form
     {
-        Random rnd=new Random();
+        private Random rnd = new Random();
+        private List<int> randomNumbers = new List<int>();
+        private List<int> nyeroSzamok = new List<int>();
+        private decimal egyenleg = 0;
+
+
         public VeletlenSzamosOldal()
         {
             InitializeComponent();
             fillNumbers();
-            
+            richTextBox1.Hide();
+
         }
         private void fillNumbers()
         {
@@ -33,41 +39,125 @@ namespace AlkalmazasFejlesztes_projekt
                     label.Dock = DockStyle.Fill;
                     label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                     lottoryTable.Controls.Add(label, column, row);
+                    randomSzamok.Click += RandomGenerate;
                     counter++;
+
                 }
             }
+            label1.Text = $"Egyenleg: \n{egyenleg} Ft";
         }
+        private void RandomGenerate(object sender, EventArgs e)
+        {
 
+        }
         private void button1_Click_1(object sender, EventArgs e) // vissza gomb
         {
             MainOldal mainOldal = new MainOldal();
             mainOldal.Show();
             this.Hide();
-            
+
             mainOldal.FormClosed += (s, args) => this.Close();
         }
-        private int[] veletlenszamok = new int[5];
-        private void Veletlengeneralas(object sender, EventArgs e)
-          
-        {
-            for(int i=0; i < 5; i++)
-            {
-               veletlenszamok.Append(rnd.Next(1, 90));
 
+        private void Veletlengeneralas(object sender, EventArgs e)
+
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                int randomSzam = rnd.Next(1, 91); // 1-től 90-ig generál véletlen számot
+                Console.WriteLine(randomSzam);
             }
 
 
+            foreach (Control control in lottoryTable.Controls)
+            {
+                if (control is Label label1 && label1.Text == randomNumbers[0].ToString())
+                {
+                    label1.BackColor = Color.Red;
+                }
+            }
+
+
+
+
+
+
         }
-
-
-
-
-
 
 
         private void lottoryTable_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SorsolasButton_Click(object sender, EventArgs e)
+        {
+            if (nyeroSzamok.Count() != 0)
+            {
+                nyeroSzamok.Clear();
+            }
+
+            else
+            {
+                int talalatok = 0;
+                int nyeremeny = 0;
+
+                foreach (int szam in randomNumbers)
+                {
+                    if (nyeroSzamok.Contains(szam))
+                    {
+                        talalatok++;
+                    }
+                }
+
+                switch (talalatok)
+                {
+                    case 1:
+                        nyeremeny += 0;
+                        break;
+                    case 2:
+                        nyeremeny += 2855;
+                        break;
+                    case 3:
+                        nyeremeny += 21895;
+                        break;
+                    case 4:
+                        nyeremeny += 1576810;
+                        break;
+                    case 5:
+                        nyeremeny += 1785282580;
+                        break;
+                    default:
+                        break;
+                }
+
+                egyenleg += nyeremeny;
+
+                nyeroSzamok.Sort();
+                randomNumbers.Sort();
+
+                string nyeroSzamokString = string.Join("   ", nyeroSzamok);
+                string kivalasztottSzamokString = string.Join("   ", randomNumbers);
+
+                richTextBox1.Show();
+
+                SorsolasButton.Hide();
+
+                richTextBox1.Text = $"Találatok száma: {talalatok}\n\n" +
+                    $"A nyerő számok: \n{nyeroSzamokString}\n\n" +
+                    $"A megtett számok: \n{kivalasztottSzamokString}\n\n" +
+                    $"Az Ön nyereménye: \n{nyeremeny.ToString("C0")}";
+
+                label1.Text = $"Egyenleg: \n{egyenleg.ToString("C0")}";
+
+
+            }
+            randomSzamok.Hide();
         }
     }
 }

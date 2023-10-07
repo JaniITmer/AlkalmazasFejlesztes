@@ -32,27 +32,32 @@
             this.randomSzamok = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lottoryTable = new System.Windows.Forms.TableLayoutPanel();
+            this.SorsolasButton = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // randomSzamok
             // 
             this.randomSzamok.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.randomSzamok.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.randomSzamok.Location = new System.Drawing.Point(94, 76);
+            this.randomSzamok.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.randomSzamok.ForeColor = System.Drawing.Color.Yellow;
+            this.randomSzamok.Location = new System.Drawing.Point(74, 57);
             this.randomSzamok.Name = "randomSzamok";
-            this.randomSzamok.Size = new System.Drawing.Size(153, 76);
+            this.randomSzamok.Size = new System.Drawing.Size(153, 92);
             this.randomSzamok.TabIndex = 1;
-            this.randomSzamok.Text = "Random számok";
+            this.randomSzamok.Text = "Random számok kérése";
             this.randomSzamok.UseVisualStyleBackColor = false;
             this.randomSzamok.Click += new System.EventHandler(this.Veletlengeneralas);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(52, 333);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(75, 351);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 41);
+            this.button1.Size = new System.Drawing.Size(152, 57);
             this.button1.TabIndex = 2;
             this.button1.Text = "Vissza";
             this.button1.UseVisualStyleBackColor = false;
@@ -74,7 +79,7 @@
             this.lottoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.lottoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.lottoryTable.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.lottoryTable.Location = new System.Drawing.Point(365, 36);
+            this.lottoryTable.Location = new System.Drawing.Point(289, 22);
             this.lottoryTable.Name = "lottoryTable";
             this.lottoryTable.RowCount = 9;
             this.lottoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.97574F));
@@ -86,9 +91,39 @@
             this.lottoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.97574F));
             this.lottoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.97574F));
             this.lottoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.19405F));
-            this.lottoryTable.Size = new System.Drawing.Size(359, 338);
+            this.lottoryTable.Size = new System.Drawing.Size(435, 386);
             this.lottoryTable.TabIndex = 0;
             this.lottoryTable.Paint += new System.Windows.Forms.PaintEventHandler(this.lottoryTable_Paint);
+            // 
+            // SorsolasButton
+            // 
+            this.SorsolasButton.BackColor = System.Drawing.Color.Cyan;
+            this.SorsolasButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SorsolasButton.Location = new System.Drawing.Point(74, 201);
+            this.SorsolasButton.Name = "SorsolasButton";
+            this.SorsolasButton.Size = new System.Drawing.Size(153, 94);
+            this.SorsolasButton.TabIndex = 3;
+            this.SorsolasButton.Text = "Sorsolás indítása";
+            this.SorsolasButton.UseVisualStyleBackColor = false;
+            this.SorsolasButton.Click += new System.EventHandler(this.SorsolasButton_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(37, 48);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(220, 368);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(44, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // VeletlenSzamosOldal
             // 
@@ -96,12 +131,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(758, 448);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.SorsolasButton);
             this.Controls.Add(this.randomSzamok);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.lottoryTable);
             this.Name = "VeletlenSzamosOldal";
             this.Text = "Veletlenszamos";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,5 +148,8 @@
         private System.Windows.Forms.Button randomSzamok;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TableLayoutPanel lottoryTable;
+        private System.Windows.Forms.Button SorsolasButton;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
