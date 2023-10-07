@@ -19,7 +19,6 @@ namespace AlkalmazasFejlesztes_projekt
         {
             InitializeComponent();
             fillNumbers();
-            NyeroSzamGeneralas();
         }
 
         private void fillNumbers()
@@ -101,6 +100,12 @@ namespace AlkalmazasFejlesztes_projekt
 
         private void sorsolasButton_Click(object sender, EventArgs e)
         {
+            if (nyeroSzamok.Count() != 0)
+            {
+                nyeroSzamok.Clear();
+            }
+            NyeroSzamGeneralas();
+
             if (kivalasztottSzamok.Count() != 5)
             {
                 MessageBox.Show($"Válasszon ki még {5 - kivalasztottSzamok.Count()} számot!");
@@ -116,6 +121,8 @@ namespace AlkalmazasFejlesztes_projekt
                         talalatok++;
                     }
                 }
+                string nyerostring = string.Join(", ", nyeroSzamok);
+                MessageBox.Show($"{nyerostring}");
                 MessageBox.Show($"Találatok száma: {talalatok}");
             }
         }
