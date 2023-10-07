@@ -12,6 +12,7 @@ namespace AlkalmazasFejlesztes_projekt
 {
     public partial class SajatSzamosOldal : Form
     {
+        private List<int> kivalasztottSzamok = new List<int>();
         public SajatSzamosOldal()
         {
             InitializeComponent();
@@ -30,11 +31,30 @@ namespace AlkalmazasFejlesztes_projekt
                     label.Text = counter.ToString();
                     label.Dock = DockStyle.Fill;
                     label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                    label.Click += Label_Click;
                     lottoryTable.Controls.Add(label, column, row);
                     counter++;
                 }
             }
         }
+
+        private void Label_Click(object sender, EventArgs e)
+        {
+            Label label = (Label)sender;
+            int szam = int.Parse(label.Text);
+
+            if (!kivalasztottSzamok.Contains(szam) && kivalasztottSzamok.Count < 5)
+            {
+                kivalasztottSzamok.Add(szam);
+                label.BackColor = Color.Orange;
+            }
+            else
+            {
+                kivalasztottSzamok.Remove(szam);
+                label.BackColor = Color.PeachPuff;
+            }
+        }
+
         private void lottoryTable_Paint(object sender, PaintEventArgs e)
         {
 
