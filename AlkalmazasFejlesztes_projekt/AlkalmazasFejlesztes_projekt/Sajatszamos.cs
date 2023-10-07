@@ -51,7 +51,11 @@ namespace AlkalmazasFejlesztes_projekt
                 kivalasztottSzamok.Add(szam);
                 label.BackColor = Color.Orange;
             }
-            else
+            else if (!kivalasztottSzamok.Contains(szam) && kivalasztottSzamok.Count == 5)
+            {
+                MessageBox.Show("Már kiválasztottál 5 számot!");
+            }
+            else 
             {
                 kivalasztottSzamok.Remove(szam);
                 label.BackColor = Color.PeachPuff;
