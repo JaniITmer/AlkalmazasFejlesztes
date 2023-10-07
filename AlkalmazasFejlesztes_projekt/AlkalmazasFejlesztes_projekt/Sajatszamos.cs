@@ -13,10 +13,13 @@ namespace AlkalmazasFejlesztes_projekt
     public partial class SajatSzamosOldal : Form
     {
         private List<int> kivalasztottSzamok = new List<int>();
+        private List<int> nyeroSzamok = new List<int>();
+        private Random rnd = new Random();
         public SajatSzamosOldal()
         {
             InitializeComponent();
             fillNumbers();
+            NyeroSzamGeneralas();
         }
 
         private void fillNumbers()
@@ -43,7 +46,7 @@ namespace AlkalmazasFejlesztes_projekt
             Label label = (Label)sender;
             int szam = int.Parse(label.Text);
 
-            if (!kivalasztottSzamok.Contains(szam) && kivalasztottSzamok.Count < 5)
+            if (!kivalasztottSzamok.Contains(szam) && kivalasztottSzamok.Count < 5) 
             {
                 kivalasztottSzamok.Add(szam);
                 label.BackColor = Color.Orange;
@@ -52,6 +55,19 @@ namespace AlkalmazasFejlesztes_projekt
             {
                 kivalasztottSzamok.Remove(szam);
                 label.BackColor = Color.PeachPuff;
+            }
+        }
+
+        private void NyeroSzamGeneralas()
+        {
+            while (nyeroSzamok.Count < 5)
+            {
+                int szam = rnd.Next(1, 91);
+
+                if (!nyeroSzamok.Contains(szam))
+                {
+                    nyeroSzamok.Add(szam);
+                }
             }
         }
 
