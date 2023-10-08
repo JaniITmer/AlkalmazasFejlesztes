@@ -59,15 +59,33 @@ namespace AlkalmazasFejlesztes_projekt
             mainOldal.FormClosed += (s, args) => this.Close();
         }
 
+
+
         private void Veletlengeneralas(object sender, EventArgs e)
 
         {
+
+            randomNumbers.Clear();
+            foreach (Control control in lottoryTable.Controls)
+            {
+                if (control is Label label)
+                {
+                    label.BackColor = Color.PeachPuff;
+                }
+            }
+          
+           
             //véletlen számok generálása
-            for (int i = 0; i < 5; i++)
+            while(randomNumbers.Count!=5)
             {
                 int randomSzam = rnd.Next(1, 91); // 1-től 90-ig generál véletlen számot
-                randomNumbers.Add(randomSzam);
-               
+
+                if (!randomNumbers.Contains(randomSzam))
+                {
+                    randomNumbers.Add(randomSzam);
+                }
+                    
+
             }
 
             //Színek változtatása a táblában a random számokból
@@ -101,7 +119,15 @@ namespace AlkalmazasFejlesztes_projekt
 
 
 
+
+
+
         }
+
+
+
+
+    
 
 
         private void lottoryTable_Paint(object sender, PaintEventArgs e)
