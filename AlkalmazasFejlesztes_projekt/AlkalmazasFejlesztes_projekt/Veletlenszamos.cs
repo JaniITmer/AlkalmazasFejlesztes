@@ -62,19 +62,38 @@ namespace AlkalmazasFejlesztes_projekt
         private void Veletlengeneralas(object sender, EventArgs e)
 
         {
+            //véletlen számok generálása
             for (int i = 0; i < 5; i++)
             {
                 int randomSzam = rnd.Next(1, 91); // 1-től 90-ig generál véletlen számot
-                Console.WriteLine(randomSzam);
+                randomNumbers.Add(randomSzam);
+               
             }
 
-
+            //Színek változtatása a táblában a random számokból
             foreach (Control control in lottoryTable.Controls)
             {
                 if (control is Label label1 && label1.Text == randomNumbers[0].ToString())
                 {
                     label1.BackColor = Color.Red;
                 }
+                if (control is Label label2 && label2.Text == randomNumbers[1].ToString())
+                {
+                    label2.BackColor = Color.Red;
+                }
+                if (control is Label label3 && label3.Text == randomNumbers[2].ToString())
+                {
+                    label3.BackColor = Color.Red;
+                }
+                if (control is Label label4 && label4.Text == randomNumbers[3].ToString())
+                {
+                    label4.BackColor = Color.Red;
+                }
+                if (control is Label label5 && label5.Text == randomNumbers[4].ToString())
+                {
+                    label5.BackColor = Color.Red;
+                }
+
             }
 
 
