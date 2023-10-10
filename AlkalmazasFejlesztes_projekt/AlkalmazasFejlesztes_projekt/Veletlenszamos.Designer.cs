@@ -35,6 +35,7 @@
             this.SorsolasButton = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.resetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // randomSzamok
@@ -93,7 +94,6 @@
             this.lottoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.19405F));
             this.lottoryTable.Size = new System.Drawing.Size(435, 386);
             this.lottoryTable.TabIndex = 0;
-            
             // 
             // SorsolasButton
             // 
@@ -124,7 +124,18 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
-            
+            // 
+            // resetButton
+            // 
+            this.resetButton.BackColor = System.Drawing.Color.Gold;
+            this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.resetButton.Location = new System.Drawing.Point(84, 212);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(127, 75);
+            this.resetButton.TabIndex = 6;
+            this.resetButton.Text = "Új játék";
+            this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // VeletlenSzamosOldal
             // 
@@ -132,6 +143,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(758, 448);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.SorsolasButton);
@@ -152,5 +164,6 @@
         private System.Windows.Forms.Button SorsolasButton;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button resetButton;
     }
 }

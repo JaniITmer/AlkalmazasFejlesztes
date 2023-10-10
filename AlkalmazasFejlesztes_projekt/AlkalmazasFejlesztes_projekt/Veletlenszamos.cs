@@ -25,6 +25,7 @@ namespace AlkalmazasFejlesztes_projekt
             fillNumbers();
             richTextBox1.Hide();
             NyeroSzamGeneralas();
+            resetButton.Hide();
 
         }
         private void NyeroSzamGeneralas()
@@ -210,11 +211,31 @@ namespace AlkalmazasFejlesztes_projekt
                     $"Az Ön nyereménye: \n{nyeremeny.ToString("C0")}";
 
                 label1.Text = $"Egyenleg: \n{egyenleg.ToString("C0")}";
-
+                resetButton.Show();
 
             }
             
         }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+           
+                randomNumbers.Clear();
+
+                foreach (Control control in lottoryTable.Controls)
+                {
+                    if (control is Label label)
+                    {
+                        label.BackColor = Color.PeachPuff;
+                    }
+                }
+                randomSzamok.Show();
+                richTextBox1.Text = string.Empty;
+                richTextBox1.Hide();
+                resetButton.Hide();
+                SorsolasButton.Show();
+            }
+        
     }
 }
 
