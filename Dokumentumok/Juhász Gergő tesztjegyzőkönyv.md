@@ -14,3 +14,4 @@
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
 | Teszt #01 | Főmenü kilépés gombra való kattintás. | Kattintás után megjelenik egy ablak, hogy megerősítse a bezárást. | Kattintás után megjelenik egy ablak, hogy megerősítse a bezárást. | Nem találtam problémát. |
 | Teszt #02 | Főmenü -> sajátszámos oldal gombra való kattintás | Kattintás után eltűnik a főoldal és megjelenik a sajátszámos oldal | Kattintás után eltűnik a főoldal és megjelenik a sajátszámos oldal | Nem találtam problémát. |
+| Teszt #03 | Sajátszámos oldal számok bejelölése | A választott számot bejelöli, hogy kivan választva | A választott számot bejelöli, hogy kivan választva | Nem találtam problémát. |
