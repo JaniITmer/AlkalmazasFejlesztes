@@ -22,10 +22,12 @@ namespace AlkalmazasFejlesztes_projekt
         public VeletlenSzamosOldal()
         {
             InitializeComponent();
+            NyeroSzamGeneralas();
             fillNumbers();
             richTextBox1.Hide();
-            NyeroSzamGeneralas();
+           
             resetButton.Hide();
+
 
         }
         private void NyeroSzamGeneralas()
@@ -142,11 +144,8 @@ namespace AlkalmazasFejlesztes_projekt
 
         private void SorsolasButton_Click(object sender, EventArgs e)
         {
+            NyeroSzamGeneralas();
 
-            if (nyeroSzamok.Count() != 0)
-            {
-                nyeroSzamok.Clear();
-            }
 
             if (randomNumbers.Count() == 0)
                 {
@@ -213,6 +212,9 @@ namespace AlkalmazasFejlesztes_projekt
                 label1.Text = $"Egyenleg: \n{egyenleg.ToString("C0")}";
                 resetButton.Show();
 
+                nyeroSzamok.Clear();
+                
+
             }
             
         }
@@ -221,8 +223,9 @@ namespace AlkalmazasFejlesztes_projekt
         {
            
                 randomNumbers.Clear();
+              
 
-                foreach (Control control in lottoryTable.Controls)
+            foreach (Control control in lottoryTable.Controls)
                 {
                     if (control is Label label)
                     {
