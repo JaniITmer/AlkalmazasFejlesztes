@@ -15,3 +15,4 @@
 | Teszt #01 | Főmenü kilépés gombra való kattintás. | Kattintás után megjelenik egy ablak, hogy megerősítse a bezárást. | Kattintás után megjelenik egy ablak, hogy megerősítse a bezárást. | Nem találtam problémát. |
 | Teszt #02 | Főmenü -> sajátszámos oldal gombra való kattintás | Kattintás után eltűnik a főoldal és megjelenik a sajátszámos oldal | Kattintás után eltűnik a főoldal és megjelenik a sajátszámos oldal | Nem találtam problémát. |
 | Teszt #03 | Sajátszámos oldal számok bejelölése | A választott számot bejelöli, hogy kivan választva | A választott számot bejelöli, hogy kivan választva | Nem találtam problémát. |
+| Teszt #04 | Sajátszámos oldal kevesebb szám bejelölése majd sorsolás indítása | Egy felugró ablakban megjelenik mennyi számot kell még kiválasztani, a sorsolás nem fut le | Egy felugró ablakban megjelenik mennyi számot kell még kiválasztani, a sorsolás nem fut le | Nem találtam problémát. |
