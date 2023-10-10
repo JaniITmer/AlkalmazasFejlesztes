@@ -17,6 +17,7 @@
 | Teszt #03 | -Véletlenszámos oldal-  Vissza gombra kattintáskor az adatok nem frissülnek | Az elmentett adatok új játék indításakor törlődnek   | Az adatok sikeresen törlődtek az vissza gomb benyomásakor                                                        | Nem találtam problémát. |                                     
 | Teszt #04 | -Véletlenszámos oldal- Az egyenleg helyes megjelenítése | Az egyenleg megfelelően jelenik meg  az oldalon  | A megfelelő összeg jelent meg az oldalon                                                      | Nem találtam problémát. |    
 | Teszt #05 | -Véletlenszámos oldal-  Vissza gomb használata | A vissza gomb megnyomásakor a veletlenszamos oldal eltűnik és megjelenik a kezdőoldal | A vissza gomb megnyomásakor a veletlenszamos oldal eltűnik és megjelenik a kezdőoldal                                                     | Nem találtam problémát. | 
+| Teszt #06 | -Főmenü- Játék véletlenszerű számokkal gomb használata| Megfelelően megnyílik a véletlenszámos sorsoló oldal |        Megfelelően megnyílik a véletlenszámos sorsoló oldal                                              | Nem találtam problémát. | 
                                                   
 
 
