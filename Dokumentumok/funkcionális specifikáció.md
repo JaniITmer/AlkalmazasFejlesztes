@@ -31,13 +31,3 @@
 ## 8. Képernyőtervek
 
 ![képnév](gitlink ahol a kép van)
-
-## 9. Forgatókönyvek
-
-## 10. Funkció - követelmény megfeleltetése
-
-| Id | Követelmény | Funkció |
-| :---: | --- | --- |
-| K4 | ... | ... |
-
-## 11 Fogalomszótár
