@@ -17,7 +17,7 @@ namespace AlkalmazasFejlesztes_projekt
         private List<int> randomNumbers = new List<int>();
         private List<int> nyeroSzamok = new List<int>();
         private decimal egyenleg = 0;
-        private List<int> kivalasztottSzamok = new List<int>();
+        
 
         public VeletlenSzamosOldal()
         {
@@ -39,72 +39,7 @@ namespace AlkalmazasFejlesztes_projekt
                 }
             }
         }
-        private void sorsolasButton_Click(object sender, EventArgs e)
-        {
-            if (nyeroSzamok.Count() != 0)
-            {
-                nyeroSzamok.Clear();
-            }
-            NyeroSzamGeneralas();
-
-            if (kivalasztottSzamok.Count() != 5)
-            {
-                MessageBox.Show($"Válasszon ki még {5 - kivalasztottSzamok.Count()} számot!");
-            }
-            else
-            {
-                int talalatok = 0;
-                int nyeremeny = 0;
-
-                foreach (int szam in kivalasztottSzamok)
-                {
-                    if (nyeroSzamok.Contains(szam))
-                    {
-                        talalatok++;
-                    }
-                }
-
-                switch (talalatok)
-                {
-                    case 1:
-                        nyeremeny += 0;
-                        break;
-                    case 2:
-                        nyeremeny += 2855;
-                        break;
-                    case 3:
-                        nyeremeny += 21895;
-                        break;
-                    case 4:
-                        nyeremeny += 1576810;
-                        break;
-                    case 5:
-                        nyeremeny += 1785282580;
-                        break;
-                    default:
-                        break;
-                }
-
-                egyenleg += nyeremeny;
-
-                nyeroSzamok.Sort();
-                kivalasztottSzamok.Sort();
-
-                string nyeroSzamokString = string.Join("   ", nyeroSzamok);
-                string kivalasztottSzamokString = string.Join("   ", kivalasztottSzamok);
-
-                richTextBox1.Show();
-                resetButton.Show();
-                sorsolasButton.Hide();
-
-                richTextBox1.Text = $"Találatok száma: {talalatok}\n\n" +
-                    $"A nyerő számok: \n{nyeroSzamokString}\n\n" +
-                    $"A megtett számok: \n{kivalasztottSzamokString}\n\n" +
-                    $"Az Ön nyereménye: \n{nyeremeny.ToString("C0")}";
-
-                label1.Text = $"Egyenleg: \n{egyenleg.ToString("C0")}";
-            }
-        }
+        
         private void fillNumbers()
         {
             int counter = 1;
@@ -118,17 +53,14 @@ namespace AlkalmazasFejlesztes_projekt
                     label.Dock = DockStyle.Fill;
                     label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                     lottoryTable.Controls.Add(label, column, row);
-                    randomSzamok.Click += RandomGenerate;
+                    
                     counter++;
 
                 }
             }
             label1.Text = $"Egyenleg: \n{egyenleg} Ft";
         }
-        private void RandomGenerate(object sender, EventArgs e)
-        {
-
-        }
+        
         private void button1_Click_1(object sender, EventArgs e) // vissza gomb
         {
             MainOldal mainOldal = new MainOldal();
@@ -205,26 +137,23 @@ namespace AlkalmazasFejlesztes_projekt
 
 
 
-
-    
-
-
-        private void lottoryTable_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void SorsolasButton_Click(object sender, EventArgs e)
         {
+
             if (nyeroSzamok.Count() != 0)
             {
                 nyeroSzamok.Clear();
             }
+
+            if (randomNumbers.Count() == 0)
+                {
+                    MessageBox.Show($"Kattintson a Random számok kérése gombra !");
+                    randomSzamok.Show();
+                }
+            
+            
 
             else
             {
@@ -267,8 +196,11 @@ namespace AlkalmazasFejlesztes_projekt
 
                 string nyeroSzamokString = string.Join("   ", nyeroSzamok);
                 string kivalasztottSzamokString = string.Join("   ", randomNumbers);
-
-                richTextBox1.Show();
+                if (randomNumbers.Count == 5)
+                {
+                    randomSzamok.Hide();
+                    richTextBox1.Show();
+                }
 
                 SorsolasButton.Hide();
 
@@ -281,7 +213,7 @@ namespace AlkalmazasFejlesztes_projekt
 
 
             }
-            randomSzamok.Hide();
+            
         }
     }
 }

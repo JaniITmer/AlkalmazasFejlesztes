@@ -93,7 +93,7 @@
             this.lottoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.19405F));
             this.lottoryTable.Size = new System.Drawing.Size(435, 386);
             this.lottoryTable.TabIndex = 0;
-            this.lottoryTable.Paint += new System.Windows.Forms.PaintEventHandler(this.lottoryTable_Paint);
+            
             // 
             // SorsolasButton
             // 
@@ -124,7 +124,7 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // VeletlenSzamosOldal
             // 
