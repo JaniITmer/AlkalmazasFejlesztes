@@ -12,6 +12,6 @@
 
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
-| Teszt #01 | Random szám kérése gomb többszöri benyomása egymás után | A megfelelő gombok maradnak az oldalon és nem generál 5 től több számot | Minden gomb a helyén maradt és a számok háttere megfelelően megváltozott gombnyomásra| Nem találtam problémát.   |
-| Teszt #02 | Helytelen adat bevitele y mezőbe | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak a problémát.     | Művelet végrehajtódik.                                                         | Ennek a műveletnek nem lehetett volna lefutnia. Mielőbbi javításra szorul |
+| Teszt #01 | Random szám kérése gomb többszöri benyomása egymás után | A megfelelő gombok maradnak az oldalon és nem generál 5-től több számot | Minden gomb a helyén maradt és a számok háttere megfelelően megváltozott gombnyomásra| Nem találtam problémát.   |
+| Teszt #02 | Sorsolás gomb random számok nélkül | A nyerő számok generálása végbemegy, de nem lesz találat   | A sorsolás 0 találatos lesz                                                        | Nem találtam problémát. |
 | Teszt #XX | ... | ... | ... | ... |                                        
