@@ -26,8 +26,5 @@
 ## 6. Használati esetek
 #### A szoftvert bármelyik korosztály használhatja. A fiatalok esetében, főleg a nyeremény mennyisége, a találatok száma és a szimuláció lehet szórakoztató. A felnőtteknél, inkább a saját számokkal való szerencse próbálgatása a szórakoztató, hogy mennyire bírják eltalálni a számokat, mely nem is annyira egyszerű. Végül az idősebb korosztálynál pedig maga a kezelőfelület és a játék bonyolultsága miatt lehet vonzó.
 
-## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
-
-## 8. Képernyőtervek
-
-![képnév](gitlink ahol a kép van)
+## 7. Terjedelem
+#### A programunk megközelítőleg 400 és 500 sor közé tehető.
