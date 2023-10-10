@@ -4,7 +4,7 @@
  | Helyes adat megadása    | Megtörténik a művelet.                                                                                              | 
  
 
-#### Ezeket a teszteseteket végrehalyatani a legtöbb kombinációval
+#### Ezeket a teszteseteket végrehajtani a legtöbb kombinációval
 
 **Tesztelő:** Nagy János
 
@@ -16,3 +16,6 @@
 | Teszt #02 | Sorsolás gomb random számok nélkül | A nyerő számok generálása végbemegy, de nem lesz találat   | Megjelenő ablak figyelmezteti a felhasználót, hogy kattintson a random számok generálása gombra                                                       | Nem találtam problémát. |
 | Teszt #03 | Új játék gombra kattintáskor az adatok nem frissülnek | Az elmentett adatok új játék indításakor törlődnek   | Az adatok sikeresen törlődtek az új játék gomb benyomásakor                                                        | Nem találtam problémát. |                                     
 | Teszt #04 | Az egyenleg helyes megjelenítése | Az egyenleg megfelelően jelenik meg  az oldalon  | A megfelelő összeg jelent meg az oldalon                                                      | Nem találtam problémát. |    
+| Teszt #05 | Vissza gomb használata | A vissza gomb megnyomásakor a veletlenszamos oldal eltűnik és megjelenik a kezdőoldal | A vissza gomb megnyomásakor a veletlenszamos oldal eltűnik és megjelenik a kezdőoldal                                                     | Nem találtam problémát. | 
+
+
