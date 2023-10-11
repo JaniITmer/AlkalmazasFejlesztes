@@ -58,4 +58,4 @@ A tesztelések célja a rendszer és komponensei funkcionalitásának teljes viz
  - Találatok számát jól meg kell számolni
 
 ## 8. Telepités
-A programot Githubon keresztül lehet telepíteni miután elvégeztük a letöltést ([A letöltéshez segítség])((https://crast.net/150687/downloading-files-from-github-is-very-simple-this-is-how-you-can-do-it-from-your-mobile-or-pc "Segítség a letöltéshez")) utánna ki bontjuk a mappát oda ahová szeretnénk.
+A programot Githubon keresztül lehet telepíteni miután elvégeztük a letöltést ([A letöltéshez segítség]((https://crast.net/150687/downloading-files-from-github-is-very-simple-this-is-how-you-can-do-it-from-your-mobile-or-pc "Segítség a letöltéshez")) utánna ki bontjuk a mappát oda ahová szeretnénk.
